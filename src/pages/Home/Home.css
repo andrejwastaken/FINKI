@@ -1,0 +1,51 @@
+/* home.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Set background properties for the entire webpage */
+    background-size: cover;
+}
+
+.overlay {
+    /* Overlay to enhance readability of content on top of the video */
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    position: absolute;
+}
+
+.room-container {
+    position: relative;
+    z-index: 1; /* Ensure content is on top of the overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.order-now button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.order-now button:hover {
+    background-color: #2980b9;
+}
+
+.best-doners-text {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff; /* Change the color of the text */
+}
+video{
+    float: left;
+    width: 200px;
+    height: 200px;
+}

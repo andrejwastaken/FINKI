@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #ffa800; /* Change background color if necessary */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for styling */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Adjust text color as needed */
+    font-size: 25px;
+}
+
+.logo {
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Increase the space between each link */
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+/* Style for the shopping cart icon */
+.shopping-cart-icon img {
+    width: 60px; /* Adjust the width to make the icon small */
+    height: 60px; /* Adjust the height to make the icon small */
+    margin-top: 15px;
+}
