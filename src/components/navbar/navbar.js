@@ -17,7 +17,10 @@ function NavbarComponent() {
                         <Nav.Link href="#home" style={linkStyle}>Home</Nav.Link>
                         <Nav.Link href="/menu" style={linkStyle}>Menu</Nav.Link>
                         <Nav.Link href="/about" style={linkStyle}>About</Nav.Link>
-                        <Nav.Link href="/contact" style={linkStyle}>Registration/Login</Nav.Link>
+
+                        <Nav.Link href="/registration-login" style={linkStyle}>
+                            <RegistrationLogin onShow={handleRegistrationModalShow} />
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
