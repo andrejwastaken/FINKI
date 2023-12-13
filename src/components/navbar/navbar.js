@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './navbar.css';
+import RegistrationLogin from "../registration-login/registration-login";
 
 function NavbarComponent() {
     const linkStyle = {
@@ -8,6 +9,10 @@ function NavbarComponent() {
         marginRight: '15px', // Add margin between each link
         textDecoration: 'none'
     };
+
+    const [showRegistrationModal, setShowRegistrationModal] = useState(false);
+
+    const handleRegistrationModalShow = () => setShowRegistrationModal(true);
 
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
