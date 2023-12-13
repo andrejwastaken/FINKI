@@ -7,20 +7,44 @@ import sliki from '../../assets/sliki'; // Import your assets
 function Home(props) {
     return (
         <div className="Home">
-            <Navbar />
-            <div className="room-container">
-                <div className="video">
-                    <video autoPlay muted loop>
-                        <source src={sliki.doner_video} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+            <div className="background-container">
+                <Navbar />
+                <div className="order-now-section">
+                    <button className="order-now-btn">ORDER NOW!</button>
                 </div>
-                <div className="order-now">
-                    <p className="best-doners-text">The best Doners in the universe</p>
-                    <button>Order Now</button>
-                </div>
+
             </div>
 
+
+            <div class="location" id="loc1" >
+                <h3>Кеј</h3>
+                <p>Понеделник - Сабота
+                    <br></br>  10:00 - 00:00
+                    <br></br>   Недела
+                    <br></br>   10:00 - 23:30
+                    <br></br>   070/278-417
+                </p>
+            </div>
+
+            <div class="location" id="loc2">
+                <h3>Чаир</h3>
+                <p>Понеделник - Сабота
+                    <br></br>  10:00 - 00:00
+                    <br></br>  Недела
+                    <br></br>   10:00 - 23:30
+                    <br></br>   070/342-452 </p>
+
+            </div>
+
+            <div  class="location" id="loc3">
+                <h3 class="upper-line">Тетово</h3>
+                <p>Понеделник - Сабота
+                    <br></br>  10:00 - 00:00
+                    <br></br>  Недела
+                    <br></br>  10:00 - 23:30
+                    <br></br>  072/229-824
+                </p>
+            </div>
             <Footer />
         </div>
     );

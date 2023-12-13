@@ -4,48 +4,84 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    /* Set background properties for the entire webpage */
+}
+
+.Home
+{
+    height:400px ;
+}
+.background-container {
+    background-image: url("../../assets/plaset_homepage.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set height to cover the entire viewport */
+    /* Add any necessary styles for this container */
 }
 
-.overlay {
-    /* Overlay to enhance readability of content on top of the video */
-    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+.order-now-section {
     position: absolute;
+    bottom: 5%;
+    left: 15%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
 }
 
-.room-container {
-    position: relative;
-    z-index: 1; /* Ensure content is on top of the overlay */
-    display: flex;
+.order-now-btn {
+
+    padding: 15px 30px;
+    font-size: 30px;
+    border: none;
+    background-color: #8B4513;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.location
+{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 100px;
+}
+.location:hover{
+    width: 220px;
+    height: 220px;
+}
+
+#loc1
+{
+    border-color: #ff8731;
+    display: inline-block;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 1px;
+    color:#ff8731;
 }
-
-.order-now button {
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    background-color: #3498db;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.order-now button:hover {
-    background-color: #2980b9;
-}
-
-.best-doners-text {
+#loc2
+{
+    border-color: #512314;
+    display: inline-block;
     text-align: center;
-    margin-bottom: 15px;
-    color: #fff; /* Change the color of the text */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+    color:#512314;
 }
-video{
-    float: left;
-    width: 200px;
-    height: 200px;
+#loc3
+{
+    border-color: #d72300;
+    display: inline-block;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+    color: #d72300;
 }

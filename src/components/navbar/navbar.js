@@ -1,26 +1,28 @@
 import React from 'react';
-import './navbar.css'; // Import the CSS file for styling
-import sliki from '../../assets/sliki';
-function Navbar() {
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import './navbar.css';
+
+function NavbarComponent() {
+    const linkStyle = {
+        color: 'white', // Set the text color to white
+        marginRight: '15px', // Add margin between each link
+        textDecoration: 'none'
+    };
+
     return (
-        <nav className="navbar">
-            <div className="logo">
-                <img src={sliki.logo} /> {/* Add alt text for accessibility */}
-            </div>
-            <ul className="nav-links">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/menu">Menu</a></li>
-                <li><a href="/locations">Locations</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li className="shopping-cart-icon">
-                    <a href = "/shopping-cart">
-                        <img src={sliki.shopping_cart} alt="Shopping Cart" />
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <Navbar expand="lg" className="bg-body-tertiary">
+            <Container>
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto" >
+                        <Nav.Link href="#home" style={linkStyle}>Home</Nav.Link>
+                        <Nav.Link href="/menu" style={linkStyle}>Menu</Nav.Link>
+                        <Nav.Link href="/about" style={linkStyle}>About</Nav.Link>
+                        <Nav.Link href="/contact" style={linkStyle}>Registration/Login</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 }
 
-export default Navbar;
+export default NavbarComponent;
