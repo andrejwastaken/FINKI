@@ -10,6 +10,14 @@ const Registration = () => {
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState(null);
 
+
+    const buttonStyle = {
+        backgroundColor: '#293849',
+        marginTop:'40px',
+        float:'right',
+        borderColor: 'black',
+    };
+
     const handleRegister = async () => {
         try
         {
@@ -97,7 +105,7 @@ const Registration = () => {
                 />
             </Form.Group>
 
-            <Button style={{marginTop:'40px', float:'right'}} variant="primary" onClick={handleRegister}>
+            <Button style={buttonStyle} variant="primary" onClick={handleRegister}>
                 Register
             </Button>
 

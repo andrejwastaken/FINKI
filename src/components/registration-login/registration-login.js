@@ -7,21 +7,34 @@ import Modal from 'react-bootstrap/Modal';
 import Registration from "../register/register";
 import SignIn from "../sign-in/sign-in";
 
-
-function RegistrationLogin(props) {
+function RegistrationLogin(props)
+{
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true)
+    const handleShow = (event) =>
+    {
+        event.preventDefault();
+        setShow(true);
+    }
+
+
+    const buttonStyle = {
+        backgroundColor: '#293849',
+        color: 'white',
+        border: 'none',
+        marginRight: '15px',
+        padding:'10px',
+    };
+
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Launch demo modal
+            <Button variant="primary" style={buttonStyle} onClick={handleShow}>
+                Register/Log-in
             </Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
 
@@ -39,7 +52,7 @@ function RegistrationLogin(props) {
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
+                    <Button  style={buttonStyle} variant="primary" onClick={handleClose}>
                         Save Changes
                     </Button>
                 </Modal.Footer>

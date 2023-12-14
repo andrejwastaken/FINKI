@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '../../components/navbar/navbar';
 import Footer from '../../components/footer/footer';
-import { Button, Card, Container, Row, Col } from 'react-bootstrap';
+import {Button, Card, Col, Container, Form, Row} from 'react-bootstrap';
 import menudata from "../../assets/database/menudata";
+import Cart from "../../components/cart";
 
 function MenuPage() {
     const [selectedSize, setSelectedSize] = useState(null);

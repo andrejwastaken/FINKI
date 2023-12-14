@@ -4,28 +4,34 @@ import './navbar.css';
 import RegistrationLogin from "../registration-login/registration-login";
 
 function NavbarComponent() {
+
     const linkStyle = {
-        color: 'white', // Set the text color to white
-        marginRight: '15px', // Add margin between each link
-        textDecoration: 'none'
+        color: 'black',
+        marginRight: '15px',
+        textDecoration: 'none',
     };
+
+    const navbarStyle = {
+        backgroundColor: 'transparent',
+        borderBottom: 'none',
+
+    };
+
+
 
     const [showRegistrationModal, setShowRegistrationModal] = useState(false);
 
     const handleRegistrationModalShow = () => setShowRegistrationModal(true);
 
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg"  style={navbarStyle} >
             <Container>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" >
                         <Nav.Link href="/home" style={linkStyle}>Home</Nav.Link>
                         <Nav.Link href="/menu" style={linkStyle}>Menu</Nav.Link>
                         <Nav.Link href="/about" style={linkStyle}>About</Nav.Link>
-
-                        <Nav.Link href="/registration-login" style={linkStyle}>
-                            <RegistrationLogin onShow={handleRegistrationModalShow} />
-                        </Nav.Link>
+                        <RegistrationLogin/>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
