@@ -19,7 +19,7 @@ function NavbarComponent() {
             <Container>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" >
-                        <Nav.Link href="#home" style={linkStyle}>Home</Nav.Link>
+                        <Nav.Link href="/home" style={linkStyle}>Home</Nav.Link>
                         <Nav.Link href="/menu" style={linkStyle}>Menu</Nav.Link>
                         <Nav.Link href="/about" style={linkStyle}>About</Nav.Link>
 

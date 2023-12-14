@@ -7,8 +7,9 @@ import sliki from '../../assets/sliki'; // Import your assets
 function Home(props) {
     return (
         <div className="Home">
+            <Navbar />
             <div className="background-container">
-                <Navbar />
+
                 <div className="order-now-section">
                     <button className="order-now-btn">ORDER NOW!</button>
                 </div>
@@ -45,6 +46,8 @@ function Home(props) {
                     <br></br>  072/229-824
                 </p>
             </div>
+
+            <Contact />
             <Footer />
         </div>
     );
