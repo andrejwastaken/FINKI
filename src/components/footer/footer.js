@@ -1,5 +1,6 @@
 import React from 'react';
-import './footer.css'; // Import the CSS file for styling
+import './footer.css';
+import sliki from "../../assets/sliki";
 
 function Footer() {
     return (
@@ -10,10 +11,17 @@ function Footer() {
                 </div>
                 <div className="footer-links">
                     <ul>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                        <li><a href="/privacy">Privacy Policy</a></li>
-                        <li><a href="/terms">Terms of Service</a></li>
+                        <li>
+                            <a href="https://www.facebook.com/plasetdonermk" target="_blank" rel="noopener noreferrer">
+                                <img src={sliki.Facebook_Logo_2023} alt="Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/plasetdoner" target="_blank" rel="noopener noreferrer">
+                                <img src={sliki.Instagram_icon} alt="Instagram" />
+                            </a>
+                        </li>
+                        <li><a href="/Privacy_Policy">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -23,6 +31,5 @@ function Footer() {
         </footer>
     );
 }
-
 
 export default Footer;

@@ -21,6 +21,7 @@
 .footer .footer-links ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .footer .footer-links ul li {
@@ -30,6 +31,11 @@
 .footer .footer-links ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+.footer .footer-links img {
+    width: 30px;
+    margin-right: 1rem;
 }
 
 .footer .footer-bottom {
