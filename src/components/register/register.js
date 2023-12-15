@@ -9,6 +9,7 @@ const Registration = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState(null);
+    const [registrationSuccess, setRegistrationSuccess] = useState(false);
 
 
     const buttonStyle = {
@@ -110,6 +111,11 @@ const Registration = () => {
             </Button>
 
             {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+            {registrationSuccess && (
+                <p style={{ color: 'green', marginTop: '10px' }}>User successfully registered!</p>
+            )}
+
+
         </Form>
     );
 
