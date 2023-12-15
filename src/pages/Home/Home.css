@@ -6,6 +6,9 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #ffeec3;
+
+    background-size: cover;
+    background-position: center;
 }
 
 /* Set minimum height for the Home container */
@@ -22,7 +25,6 @@ body {
     background-image: url('https://scontent.fskp4-1.fna.fbcdn.net/v/t39.30808-6/217741755_2994588474156342_4570376477910407399_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=783fdb&_nc_ohc=ws52kyD-Cf8AX8kN-71&_nc_ht=scontent.fskp4-1.fna&oh=00_AfC0kDzL4xdErgbEgZQ3Vob3vhtQ-wt1dlIce6Qng_DUIg&oe=65815C05');
 }
 
-/* Order now section positioning */
 .order-now-section {
     position: relative;
     bottom: 5%;
@@ -32,7 +34,7 @@ body {
     width: 25%;
 }
 
-/* Style for the order button */
+
 .order-now-btn {
     padding: 15px 30px;
     font-size: 20px;
@@ -44,16 +46,34 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
-    /* Adjust order now section on smaller screens */
     .order-now-section {
         bottom: 3%;
     }
 
-    /* Modify button size for smaller screens */
     .order-now-btn {
         padding: 10px 20px;
         font-size: 16px;
     }
+}
+
+.image-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
 }
