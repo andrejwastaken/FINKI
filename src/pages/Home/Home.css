@@ -15,12 +15,11 @@ body {
     flex-direction: column;
 }
 
-/* Apply background image with responsiveness */
 .background-container {
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     position: relative;
-    flex: 1; /* Fill remaining vertical space */
+    background-image: url('https://scontent.fskp4-1.fna.fbcdn.net/v/t39.30808-6/217741755_2994588474156342_4570376477910407399_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=783fdb&_nc_ohc=ws52kyD-Cf8AX8kN-71&_nc_ht=scontent.fskp4-1.fna&oh=00_AfC0kDzL4xdErgbEgZQ3Vob3vhtQ-wt1dlIce6Qng_DUIg&oe=65815C05');
 }
 
 /* Order now section positioning */
