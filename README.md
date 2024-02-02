@@ -7,3 +7,7 @@ Exercises - contains all the problems that are practice problems on courses.fink
 
 Labs - contains all the problems that we had to solve additionally.
 
+Web projects - projects that I was working on (with other people) either for fun or for class/workshops.
+
+Other fun stuff - mostly games and such that I did for fun when I was bored.
+
