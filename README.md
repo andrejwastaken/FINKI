@@ -7,8 +7,7 @@ Exercises - contains all the problems that are practice problems on courses.fink
 
 Labs - contains all the problems that we had to solve additionally.
 
-Web projects - projects that I was working on (with other people) either for fun or for class/workshops.
+Master branch - projects that I was working on (with other people) either for fun or for class/workshops. Also other fun stuff, mostly games and such, that I did for fun when I was bored.
 
-Other fun stuff - mostly games and such that I did for fun when I was bored.
 
->>>>>>> 214cbfb63c8f3d7524ac772c6e0d33cfe8aff369
+
